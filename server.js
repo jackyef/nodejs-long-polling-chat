@@ -8,7 +8,7 @@ var router = new Router();
 http.createServer(function(request, response) {
   if (!router.resolve(request, response))
     fileServer(request, response);
-}).listen(80);
+}).listen(443);
 
 function respond(response, status, data, type) {
   response.writeHead(status, {
