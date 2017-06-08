@@ -7,7 +7,7 @@
   "licenses": [{"type": "MIT",
                 "url": "http://opensource.org/licenses/MIT"}],
   "bugs": "https://github.com/jackyef/nodejs-long-polling-chat/issues",
-  "homepage": "http://jackyef.com",
+  "homepage": "https://nodejs-long-polling-chat.herokuapp.com/",
   "maintainers":[{"name": "Jacky Efendi",
                   "email": "jacky.efendi1@gmail.com",
                   "web": "http://jackyef.com"}],
