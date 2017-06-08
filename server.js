@@ -4,11 +4,11 @@ var ecstatic = require("ecstatic");
 
 var fileServer = ecstatic({root: "./public"});
 var router = new Router();
-
+var port = process.env.port || 8000;
 http.createServer(function(request, response) {
   if (!router.resolve(request, response))
     fileServer(request, response);
-}).listen(5000);
+}).listen(port);
 
 function respond(response, status, data, type) {
   response.writeHead(status, {
