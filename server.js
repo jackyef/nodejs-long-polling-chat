@@ -62,6 +62,7 @@ router.add("GET", /^\/messages$/, function(request, response, title) {
   waitForChanges(since, response, sessName);
 });
 router.add("DELETE", /^\/clear$/, function(request, response, title) {
+  console.log("accepted a clear chat history request");
   messages = [{author: "SYSTEM", content: "--Chat history cleared--", timestamp: new Date().getTime()}];
   sendChanges(true);
 });
